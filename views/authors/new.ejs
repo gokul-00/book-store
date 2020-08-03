@@ -1,0 +1,11 @@
+<h3>New Author</h3>
+
+<form action="/authors" method="POST">
+  <%- include('_form_fields.ejs')  %> 
+  <div class="flex-row">
+    <a href="/authors">
+      <button type="button" class="btn btn-secondary">Cancel</button>
+    </a>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
