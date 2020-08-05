@@ -1,0 +1,10 @@
+<h2><%= project.title %></h2>
+<div>Publish Date : <%= project.publishDate.toDateString() %> </div>
+<div>Project Estimate : <%= project.projectEstimate %> </div>
+<div>Description : <%= project.description %> </div>
+
+<a href="/projects/edit/<%= project.id %>">Edit</a>
+<%- include('../partials/deleteForm.ejs',{
+    url : `/projects/${project.id}`
+}) %> 
+

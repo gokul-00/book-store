@@ -1,0 +1,26 @@
+<div class="center">
+
+    <div class="form-group col-md-6">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" name='title' value="<%- project.title %> ">
+    </div>
+
+  <div class="form-group col-md-6">
+    <label for="projectEstimate">Project Estimate</label>
+    <input type="number" class="form-control" name='projectEstimate' 
+     value="<%= project.projectEstimate %>">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="description">Description</label>
+    <textarea type="text" class="form-control" name='description'>
+      <%= project.description  %> 
+    </textarea>
+  </div>
+
+</div>
+
+
+
+
+

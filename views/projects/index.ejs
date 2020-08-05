@@ -1,0 +1,32 @@
+<h2>Search Project</h2>
+<form action="/projects" method="GET">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" value="<%= searchOptions.title %>">
+  </div>
+  <!-- <div>
+    <label>Published After</label>
+   // <input type="date" name="publishedAfter" value="<%= searchOptions.publishedAfter %>">
+  </div>
+  <div>
+    <label>Published Before</label>
+   // <input type="date" name="publishedBefore" value="<%= searchOptions.publishedBefore %>">
+  </div> -->
+  <button type="submit">Search</button>
+</form>
+<div>
+  
+<br>
+  
+  
+<div class="flex col-md-3">
+    <% projects.forEach(project => { %>
+      
+      <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= project.title %></h5>
+          <a href="/projects/<%= project.id %>" class="btn btn-primary">Show More</a>
+        </div>
+      </div>
+    <% }) %>
+</div>
